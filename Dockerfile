@@ -1,4 +1,4 @@
-FROM ravenstine/assethost:latest
+FROM scprdev/assethost:latest
 
 RUN echo "gem 'asset_host_kpcc', github: 'scpr/asset_host_kpcc'" >> Gemfile
 RUN bundle install

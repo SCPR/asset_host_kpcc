@@ -13,7 +13,7 @@ AssetHost.Models.AssetBrowserAssetView.prototype.highlightIfKpccOwned = ->
   # not square
   not ((@model.get('long_edge') or 0) is (@model.get('short_edge') || 0)) &&
   # not vertical
-  not ((size)-> parseInt(size[0]) < parseInt(size[1]))((@model.get('size') or "0x1").split("x")) 
+  not ((size)-> parseInt(size[0]) < parseInt(size[1]))((@model.get('size') or "0x1").split("x"))
   then true else false
   
   if isKpccOwned

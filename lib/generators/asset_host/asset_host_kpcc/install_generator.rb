@@ -10,6 +10,9 @@ module AssetHost
           @import "asset_host_kpcc"
         SCSS
         append_to_file javascript_path, "//= require asset_host_kpcc"
+        application do
+          "config.railties_order = [AssetHost::AssetHostKpcc::Engine, :main_app, :all]"
+        end
       end
     end
   end

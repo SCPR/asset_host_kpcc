@@ -8,7 +8,8 @@ AssetHost is a Ruby application that uses the Rails web framework, hence a plugi
 
 ## Features of this plugin
 
-- Adds a time-saving visual indicator that tells the user if the image is proper to use in KPCC content 
+- Adds a time-saving visual indicator that tells the user if the image is proper to use in KPCC content
+- [Honeybadger](https://honeybadger.io) error logging.
 
 
 ## Getting Started

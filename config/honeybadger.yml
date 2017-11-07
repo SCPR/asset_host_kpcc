@@ -3,3 +3,4 @@ api_key: "<%= ENV['HONEYBADGER_API_KEY'] %>"
 exceptions:
   ignore:
     - 'SignalException'
+    - !ruby/class 'NoSuchKey'

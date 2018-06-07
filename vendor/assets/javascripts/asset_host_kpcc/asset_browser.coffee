@@ -1,7 +1,7 @@
 AssetHost.Models.AssetBrowserAssetView.prototype.highlightIfKpccOwned = ->
   owner = (@model.get('owner') or '').toLowerCase()
   # has acceptable owner
-  isKpccOwned = if owner.match(/SCPR|KPCC|Getty|^AP\s*|((Flickr).*(Creative Commons))|((Creative Commons).*(Flickr))/i) &&
+  isKpccOwned = if owner.match(/SCPR|KPCC|LAist|Getty|^AP\s*|((Flickr).*(Creative Commons))|((Creative Commons).*(Flickr))/i) &&
   # not owned by these guys
   not owner.match(/NPR|Reuters|Landov/) &&
   # title doesn't contain "Mercer"
